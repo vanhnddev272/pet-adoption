@@ -1,0 +1,68 @@
+{
+    "abi": [
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "petOwner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint32",
+              "name": "petId",
+              "type": "uint32"
+            }
+          ],
+          "name": "PetAssigned",
+          "type": "event"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "petId",
+              "type": "uint32"
+            }
+          ],
+          "name": "adopt",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "adopters",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [],
+          "name": "getAdopters",
+          "outputs": [
+            {
+              "internalType": "address[16]",
+              "name": "",
+              "type": "address[16]"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ]
+}
